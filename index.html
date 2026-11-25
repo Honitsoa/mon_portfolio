@@ -1,0 +1,595 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sahaza, étudiante en informatique à Madagascar.">
+    <title>Portfolio | Sahaza</title>
+    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="loader" id="loader">
+    <div class="loader-content">
+        <span class="loader-logo">&lt;S/&gt;</span>
+        <div class="loader-bar"></div>
+        <p>Chargement du portfolio...</p>
+    </div>
+</div>
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+<header class="header" id="header">
+    <div class="container nav-container">
+        <a href="#accueil" class="logo">
+            <span class="logo-bracket">&lt;</span>Sahaza<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#accueil" class="nav-link active">Accueil</a>
+            <a href="#apropos" class="nav-link">À propos</a>
+            <a href="#competences" class="nav-link">Compétences</a>
+            <a href="#projets" class="nav-link">Projets</a>
+            <a href="#formation" class="nav-link">Formation</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-button" id="themeButton" type="button" aria-label="Activer le thème sombre">☾</button>
+            <a href="#contact" class="nav-contact">Me contacter ↗</a>
+            <button class="menu-button" id="menuButton" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ACCUEIL -->
+    <section class="hero section" id="accueil">
+        <div class="container hero-container">
+
+            <div class="hero-content reveal">
+                <div class="availability">
+                    <span class="availability-dot"></span>
+                    Étudiante en informatique
+                </div>
+
+                <p class="hero-intro">BONJOUR, JE SUIS</p>
+
+                <h1>
+                    Honintsoa<br>
+                    <span class="gradient-text">Sahazatsiory</span><br>
+                    Nathalia.
+                </h1>
+
+                <h2>
+                    Passionnée par
+                    <span class="typing-text" id="typingText">développement web</span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    Étudiante en informatique et passionnée par la création numérique,
+                    j'aime apprendre en réalisant des projets, du développement web
+                    aux bases de données, pour imaginer des solutions utiles et concrètes.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Découvrir mes projets ↗</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+
+                <div class="social-links">
+                    <span>Retrouvez-moi :</span>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+
+            <div class="hero-image-area reveal">
+                <div class="hero-image-decoration decoration-one"></div>
+                <div class="hero-image-decoration decoration-two"></div>
+
+                <div class="hero-image-frame">
+                    <img src="./profil.jpg.jpg" alt="Photo de profil de Sahaza"
+                         class="profile-image"
+                         onerror="this.style.display='none'; this.parentElement.classList.add('image-missing');">
+                </div>
+
+                <div class="floating-card card-top">
+                    <span class="floating-icon">💻</span>
+                    <div><strong>Développement</strong><small>Web & logiciel</small></div>
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span class="floating-icon">🚀</span>
+                    <div><strong>Créativité</strong><small>Apprendre et innover</small></div>
+                </div>
+
+                <div class="hero-circle-text">CODE • CREATE • INNOVATE •</div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator"><span></span>Faites défiler</div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="about section" id="apropos">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span class="section-label">01 — À PROPOS</span>
+                <h2>Qui suis-je <span class="gradient-text">?</span></h2>
+                <p>Découvrez mon parcours, ma passion et mes ambitions.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-box">
+                        <img src="./profil.jpg.jpg" alt="Sahaza, étudiante en informatique"
+                             onerror="this.style.display='none'; this.parentElement.classList.add('image-missing');">
+                    </div>
+                    <div class="about-image-caption">
+                        <span class="about-caption-mark" aria-hidden="true">✦</span>
+                        <div>
+                            <strong>Honintsoa Sahazatsiory Nathalia</strong>
+                            <small>Étudiante en informatique · Madagascar</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <span class="about-kicker">MON PARCOURS</span>
+                    <h3>Curieuse de la technologie, motivée par les idées qui deviennent des solutions.</h3>
+
+                    <p>
+                        Je m'appelle <strong>Honintsoa Sahazatsiory Nathalia</strong>.
+                        Étudiante en informatique à l'Université Adventiste Zurcher,
+                        je m'intéresse au développement web, à la programmation et aux
+                        bases de données.
+                    </p>
+
+                    <p>
+                        J'apprends en pratiquant : les exercices et les projets m'aident
+                        à consolider mes bases, à découvrir de nouvelles technologies
+                        et à progresser dans ma façon de résoudre des problèmes.
+                    </p>
+
+                    <div class="about-callout">
+                        <span aria-hidden="true">✦</span>
+                        <p><strong>Ce qui me motive</strong> — apprendre, créer et contribuer à des solutions numériques utiles.</p>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">👩‍💻</span>
+                            <div><small>Profil</small><strong>Étudiante en informatique</strong></div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🌍</span>
+                            <div><small>Pays</small><strong>Madagascar</strong></div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎯</span>
+                            <div><small>Objectif</small><strong>Développeuse informatique</strong></div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Collaborons ensemble ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="skills section" id="competences">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">02 — COMPÉTENCES</span>
+                <h2>Mes compétences <span class="gradient-text">techniques</span></h2>
+                <p>Les technologies que j'étudie et que j'utilise dans mes projets.</p>
+                <div class="skill-groups" aria-label="Domaines de compétences">
+                    <span>Développement web</span>
+                    <span>Programmation</span>
+                    <span>Bases de données</span>
+                    <span>Outils</span>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./html.jpg.png" alt="HTML"></div>
+                        <span class="skill-number" aria-hidden="true">01</span>
+                    </div>
+                    <span class="skill-type">Développement web</span>
+                    <h3>HTML5</h3>
+                    <p>Structure sémantique et organisation des pages web.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>85%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en HTML5" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span style="width:85%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./css.jpg.png" alt="CSS"></div>
+                        <span class="skill-number" aria-hidden="true">02</span>
+                    </div>
+                    <span class="skill-type">Développement web</span>
+                    <h3>CSS3</h3>
+                    <p>Mise en page, interfaces visuelles et design responsive.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>80%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en CSS3" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span style="width:80%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./Javascript.jpg.png" alt="JavaScript"></div>
+                        <span class="skill-number" aria-hidden="true">03</span>
+                    </div>
+                    <span class="skill-type">Développement web</span>
+                    <h3>JavaScript</h3>
+                    <p>Interactions et dynamisme des interfaces.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>55%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en JavaScript" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span style="width:55%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./php.jpg.png" alt="PHP"></div>
+                        <span class="skill-number" aria-hidden="true">04</span>
+                    </div>
+                    <span class="skill-type">Développement web</span>
+                    <h3>PHP</h3>
+                    <p>Développement web côté serveur.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>75%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en PHP" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span style="width:75%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./MySQL.jpg.png" alt="MySQL"></div>
+                        <span class="skill-number" aria-hidden="true">05</span>
+                    </div>
+                    <span class="skill-type">Bases de données</span>
+                    <h3>MySQL</h3>
+                    <p>Création et gestion des bases de données.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>75%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en MySQL" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span style="width:75%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./java.jpg.png" alt="Java"></div>
+                        <span class="skill-number" aria-hidden="true">06</span>
+                    </div>
+                    <span class="skill-type">Programmation</span>
+                    <h3>Java</h3>
+                    <p>Programmation orientée objet.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>60%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en Java" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span style="width:60%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./csharp.jpg.png" alt="C Sharp"></div>
+                        <span class="skill-number" aria-hidden="true">07</span>
+                    </div>
+                    <span class="skill-type">Programmation</span>
+                    <h3>C#</h3>
+                    <p>Développement et programmation.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>55%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau en C Sharp" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span style="width:55%"></span></div>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <div class="skill-image"><img src="./outils.svg" alt="Outils de développement"></div>
+                        <span class="skill-number" aria-hidden="true">08</span>
+                    </div>
+                    <span class="skill-type">Environnement</span>
+                    <h3>Outils</h3>
+                    <p>VS Code, PhpStorm, IntelliJ IDEA et Git.</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-label"><span>Niveau</span><strong>70%</strong></div>
+                        <div class="skill-level" role="progressbar" aria-label="Niveau avec les outils de développement" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="width:70%"></span></div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="projects section" id="projets">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">03 — PORTFOLIO</span>
+                <h2>Mes derniers <span class="gradient-text">projets</span></h2>
+                <p>Quelques réalisations développées dans le cadre de mon apprentissage.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./projet_etudiant.jpg.png" alt="Aperçu de l'application de gestion des étudiants" loading="lazy">
+                        <span class="project-number">01 <span>/ 03</span></span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">APPLICATION WEB</span>
+                        <h3>Gestion des étudiants</h3>
+                        <p>Application web pour organiser les informations des étudiants et faciliter leur gestion.</p>
+                        <div class="project-highlights">
+                            <span>Fonctionnalités clés</span>
+                            <ul>
+                                <li>Ajouter et consulter les étudiants</li>
+                                <li>Modifier et supprimer leurs informations</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+                        </div>
+                        <a href="#contact" class="project-link"><span>Discuter du projet</span><span class="project-link-icon" aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./projet-portfolio.jpg.png" alt="Aperçu du portfolio personnel" loading="lazy">
+                        <span class="project-number">02 <span>/ 03</span></span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">DÉVELOPPEMENT WEB</span>
+                        <h3>Portfolio personnel</h3>
+                        <p>Site personnel responsive conçu pour présenter mon parcours et mes réalisations.</p>
+                        <div class="project-highlights">
+                            <span>Contenu présenté</span>
+                            <ul>
+                                <li>Profil et compétences techniques</li>
+                                <li>Projets et parcours académique</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                        <a href="#contact" class="project-link"><span>Discuter du projet</span><span class="project-link-icon" aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="./projet_sql.jpg.png" alt="Illustration du projet de base de données SQL" loading="lazy">
+                        <span class="project-number">03 <span>/ 03</span></span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">BASE DE DONNÉES</span>
+                        <h3>Gestion des employés</h3>
+                        <p>Conception d'une base relationnelle pour structurer les données liées aux employés.</p>
+                        <div class="project-highlights">
+                            <span>Conception</span>
+                            <ul>
+                                <li>Tables et relations entre les données</li>
+                                <li>Clés et contraintes d'intégrité</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span>MySQL</span><span>SQL</span><span>Workbench</span>
+                        </div>
+                        <a href="#contact" class="project-link"><span>Discuter du projet</span><span class="project-link-icon" aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section class="education section" id="formation">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">04 — FORMATION</span>
+                <h2>Mon parcours <span class="gradient-text">académique</span></h2>
+                <p>Les étapes de mon parcours scolaire et de ma formation en informatique.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Formation actuelle</span>
+                        <h3>Études supérieures en informatique</h3>
+                        <h4>Université Adventiste Zurcher</h4>
+                        <p>Un cursus qui me permet de développer mes connaissances en informatique et de les mettre en pratique.</p>
+                        <div class="timeline-topics" aria-label="Domaines étudiés">
+                            <span>Programmation</span>
+                            <span>Développement web</span>
+                            <span>Bases de données</span>
+                            <span>Algorithmique</span>
+                        </div>
+                        <span class="timeline-status">En cours</span>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Étape précédente</span>
+                        <h3>Baccalauréat</h3>
+                        <h4>Madagascar</h4>
+                        <p>Diplôme obtenu à Madagascar, avant de poursuivre mes études supérieures en informatique.</p>
+                        <span class="timeline-status timeline-status-complete">Obtenu</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTIVATION -->
+    <section class="motivation section">
+        <div class="container">
+            <div class="motivation-box reveal">
+                <div class="motivation-copy">
+                    <span class="motivation-icon" aria-hidden="true">✦</span>
+                    <p class="section-label">MA VISION</p>
+                    <h2>Apprendre aujourd'hui,<br><span class="gradient-text">innover demain.</span></h2>
+                    <p>Chaque projet est une occasion d'apprendre, de progresser et de transformer mes connaissances en solutions concrètes.</p>
+                    <a href="#contact" class="btn btn-primary">Travaillons ensemble <span aria-hidden="true">↗</span></a>
+                </div>
+
+                <div class="motivation-steps" aria-label="Mon approche">
+                    <div class="motivation-step">
+                        <span class="motivation-step-number">01</span>
+                        <div><strong>Apprendre</strong><small>Explorer de nouvelles idées et technologies.</small></div>
+                    </div>
+                    <div class="motivation-step">
+                        <span class="motivation-step-number">02</span>
+                        <div><strong>Pratiquer</strong><small>Mettre mes connaissances en action.</small></div>
+                    </div>
+                    <div class="motivation-step">
+                        <span class="motivation-step-number">03</span>
+                        <div><strong>Innover</strong><small>Imaginer des solutions utiles et concrètes.</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">05 — CONTACT</span>
+                <h2>Entrons en <span class="gradient-text">contact</span></h2>
+                <p>Vous avez un projet ou une opportunité ? Écrivez-moi.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Discutons de votre projet !</h3>
+                    <p>Je suis ouverte aux échanges, aux collaborations, aux projets informatiques et aux opportunités de stage.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <path d="m3 7 9 6 9-6"></path>
+                            </svg>
+                        </div>
+                        <div><small>Email</small><strong>Remplacez par votre adresse email</strong></div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <div><small>Localisation</small><strong>Madagascar</strong></div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                                <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"></path>
+                            </svg>
+                        </div>
+                        <div><small>Disponibilité</small><strong>Échanges et opportunités de stage</strong></div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <svg class="form-label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                    <circle cx="12" cy="8" r="3.5"></circle>
+                                    <path d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"></path>
+                                </svg>
+                                Votre nom
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <svg class="form-label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <path d="m3 7 9 6 9-6"></path>
+                                </svg>
+                                Votre email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            <svg class="form-label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                <path d="M7 3h7l5 5v13H7z"></path>
+                                <path d="M14 3v5h5M10 13h6M10 17h6"></path>
+                            </svg>
+                            Sujet
+                        </label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <svg class="form-label-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"></path>
+                            </svg>
+                            Votre message
+                        </label>
+                        <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-button">
+                        Préparer le message
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M5 12h14M13 6l6 6-6 6"></path>
+                        </svg>
+                    </button>
+
+                    <p class="form-feedback" id="formFeedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <a href="#accueil" class="logo">
+            <span class="logo-bracket">&lt;</span>Sahaza<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>© <span id="currentYear"></span> Sahaza. Tous droits réservés.</p>
+        <a href="#accueil" class="back-top">↑</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
